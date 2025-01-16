@@ -25,21 +25,21 @@ pip install -r requirements.txt
 
 #### Outlier Analysis
 This process involves detecting and removing outliers using the IQR (Interquartile Range) method, followed by boxplot visualization to understand the cleaned dataset.
-![Feature Boxplots](./output/visuals/features_boxplot.png)
+![Feature Boxplots](output/visuals/features_boxplot.png)
 
 ### 2. Exploratory Data Analysis (EDA)
 
 #### Correlation Analysis
-![Correlation Heatmap](./output/visuals/corr_heatmap.png)
+![Correlation Heatmap](output/visuals/corr_heatmap.png)
 
 #### Global Weather Patterns
-![Daily Global Temperature Trends](./output/visuals/daily_global_precipitation_trends.png)
+![Daily Global Temperature Trends](output/visuals/daily_global_precipitation_trends.png)
 
 #### Precipitation Analysis
-![Daily Global Precipitation Trends](./output/visuals/daily_global_precipitation_trends.png)
+![Daily Global Precipitation Trends](output/visuals/daily_global_precipitation_trends.png)
 
 #### UV Index Study
-![UV Index Analysis](./output/visuals/UV_index.png)
+![UV Index Analysis](output/visuals/UV_index.png)
 
 ### 3. Feature Engineering
 - Converts categorical variables to numerical format:
@@ -85,7 +85,7 @@ This process involves detecting and removing outliers using the IQR (Interquarti
 | XGBRegressor| 1.085550 | 0.842187 |
 | GRU Model   | 1.096963 | 0.843680 |
 
-![MSE Comparison](./output/visuals/mse_comparison.png)
+![MSE Comparison](output/visuals/mse_comparison.png)
 
 ## Results
 The models can predict temperature for the next hour:
@@ -94,4 +94,4 @@ The models can predict temperature for the next hour:
 - XGBoost: 24.80°C
 - Ensemble Average: 23.38°C
 
-![Next Hour Prediction](./output/visuals/prediction_next_hour.png)
+![Next Hour Prediction](output/visuals/prediction_next_hour.png)
