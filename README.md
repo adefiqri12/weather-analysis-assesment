@@ -32,13 +32,13 @@ This process involves detecting and removing outliers using the IQR (Interquarti
 #### Correlation Analysis
 ![Correlation Heatmap](output/visuals/corr_heatmap.png)
 
-#### Global Weather Patterns
-![Daily Global Temperature Trends](output/visuals/daily_global_precipitation_trends.png)
+#### Daily Global Weather Trends 
+![Daily Global Temperature Trends](output/visuals/daily_global_temperature_trends.png)
 
-#### Precipitation Analysis
+#### Daily Global Precipitation Trends
 ![Daily Global Precipitation Trends](output/visuals/daily_global_precipitation_trends.png)
 
-#### UV Index Study
+#### UV Index Analysis
 ![UV Index Analysis](output/visuals/UV_index.png)
 
 ### 3. Feature Engineering
@@ -58,13 +58,16 @@ This process involves detecting and removing outliers using the IQR (Interquarti
 - Input sequence processing for time series models
 
 ## Models
+- Multivariate Model: The model uses multiple input features.
+- n_steps_in = 120: The input sequence spans 120 hours (5 days of hourly data).
+- n_steps_out = 1: The model predicts one step ahead (the next hour).
 
 ### Implemented Models
 1. **LSTM Model**
    - Architecture: LSTM layer (32 units) + Dense output layer
    - Optimizer: Adam
    - Loss function: MSE
-   - Features: Early stopping
+   - Callbacks: Early stopping
 
 2. **GRU Model**
    - Similar to LSTM architecture
@@ -94,4 +97,4 @@ The models can predict temperature for the next hour:
 - XGBoost: 24.80°C
 - Ensemble Average: 23.38°C
 
-![Next Hour Prediction](output/visuals/prediction_next_hour.png)
+![Next Hour Temperature °C Prediction](output/visuals/prediction_next_hour.png)
