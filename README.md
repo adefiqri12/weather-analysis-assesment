@@ -21,7 +21,7 @@ pip install -r requirements.txt
 - Processes infinity values
 - Performs outlier detection using IQR method
   - Original dataset: 47,357 rows × 41 columns
-  - After outlier removal: 20,114 rows × 42 columns
+  - After outlier removal: 20,114 rows × 41 columns
 
 #### Outlier Analysis
 This process involves detecting and removing outliers using the IQR (Interquartile Range) method, followed by boxplot visualization to understand the cleaned dataset.
@@ -79,11 +79,11 @@ This process involves detecting and removing outliers using the IQR (Interquarti
      - Subsample ratio: 0.8
 
 ### Model Comparison
-| Model       | MSE      | MAE      |
-|-------------|----------|----------|
-| LSTM Model  | 1.082546 | 0.836289 |
-| XGBRegressor| 1.085550 | 0.842187 |
-| GRU Model   | 1.096963 | 0.843680 |
+| Model       | MSE    | MAE    |
+|-------------|--------|--------|
+| LSTM Model  | 1.0825 | 0.8362 |
+| XGBRegressor| 1.0855 | 0.8421 |
+| GRU Model   | 1.0969 | 0.8436 |
 
 ![MSE Comparison](output/visuals/mse_comparison.png)
 
